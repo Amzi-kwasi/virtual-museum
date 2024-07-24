@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virtual Museum Tour</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Camera and Controls -->
+    <a-camera position="0 1.6 0">
+      <a-cursor></a-cursor>
+    </a-camera>
+
+    <!-- 360-Degree Background -->
+    <a-sky src=" https://lh3.googleusercontent.com/pw/AP1GczN4J6xsxCqRUh28iZCZt2aJ7roASi5WaGvDTyeeOSu9ekNscaIdCHb-MJHl9nCi8D83ulKuydCzZ3Bf3rIuKpp1z1wNmKw_aMyUg3IBzyDTmn3m8Ng"></a-sky>
+
+    <!-- Exhibits -->
+    <a-box position="0 1 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-text value="Artifact 1" position="0 1.5 -3" align="center"></a-text>
+
+    <a-box position="2 1 -3" rotation="0 45 0" color="#FFC65D"></a-box>
+    <a-text value="Artifact 2" position="2 1.5 -3" align="center"></a-text>
+
+    <a-box position="4 1 -3" rotation="0 45 0" color="#7BC8A4"
+           event-set__click="color: red;"></a-box>
+    <a-text value="Artifact 3" position="4 1.5 -3" align="center"></a-text>
+  </a-scene>
+</body>
+</html>
